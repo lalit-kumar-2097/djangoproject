@@ -1,0 +1,43 @@
+body{
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  padding: 0px;
+  margin: 0;
+  background-color: #f3f6f9;
+}
+
+/*Global*/
+.container{
+  width:80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/*header*/
+header{
+  /*background: #35424a;   */
+  font: 22px/0.4 "Courier New", Courier, monospace;
+  /*font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;*/
+  background: #Ffffff;
+  color:#3C89F5;
+  /*padding-top: 30px;*/
+  border-bottom: #3C89F5 1.9px solid;
+}
+
+.span_1{
+  color: #5E5E5E;
+}
+
+/*This part is for Fixed Header*/
+.content {
+  padding: 16px;
+}
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
